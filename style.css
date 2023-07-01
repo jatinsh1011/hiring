@@ -1,0 +1,332 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.941);
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 40px;
+  width: 70px;
+  margin-right: 10px;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-menu li:last-child {
+  margin-right: 0;
+}
+
+.nav-menu li a {
+  color: rgba(0, 0, 0, 0.619);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover {
+  color: #4CAF50;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-buttons .btn {
+  margin-left: 20px;
+}
+
+.hero {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: right center;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* Existing CSS styles */
+
+.features {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.features ul {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.features li {
+  flex: 0 0 33.33%;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.features li:hover {
+  transform: scale(1.05);
+}
+
+.feature-item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item i {
+  font-size: 36px;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #777;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+/* Existing CSS styles */
+
+.get-started {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.get-started h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.get-started p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* Existing CSS styles */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .nav-logo {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-buttons {
+    margin-left: auto;
+  }
+
+  .nav-buttons .btn {
+    margin-left: 10px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    padding: 60px 20px;
+  }
+}
+
+.search {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-form .form-group {
+    margin-right: 20px;
+  }
+  
+  .search-form .form-group:last-child {
+    margin-right: 0;
+  }
+  
+  .search-form label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .search-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-form .btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .search-form .btn:hover {
+    background-color: #45a049;
+  }
+  
+.candidate-list {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .candidate-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Rest of the CSS code... */
+  
+  
+  .candidate-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .candidate-info {
+    flex-grow: 1;
+  }
+  
+  .candidate-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .candidate-role,
+  .candidate-location {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .candidate-action {
+    display: flex;
+    align-items: center;
+  }
+  
+  .candidate-action .btn {
+    margin-right: 10px;
+  }
+  
+  .no-candidates {
+    text-align: center;
+    color: #888;
+    padding: 20px 0;
+  }
+  
+  .se-btn{
+    position: relative;
+    top: 31px;
+  }
